@@ -43,7 +43,7 @@ const projects = [
 
 const Cards = () => {
   return (
-    <div className="w-full h-[100vh] relative bg-black flex items-center justify-center">
+    <div className="w-full min-h-[100vh] relative bg-black flex items-center justify-center p-4 sm:p-10">
       <div className="max-w-5xl mx-auto">
         <HoverEffect items={projects} />
       </div>
