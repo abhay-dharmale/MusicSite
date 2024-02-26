@@ -31,3 +31,8 @@ body {
     text-wrap: balance;
   }
 }
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for WebKit (Chrome, Safari, etc.) */
+}
+
