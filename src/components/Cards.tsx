@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { HoverEffect } from "./ui/card-hover-effect";
+import Link from "next/link";
 
 const upcomingWebinars = [
   {
@@ -46,15 +47,21 @@ const Cards = () => {
     <div className="w-full min-h-[100vh] relative bg-black flex flex-col items-center justify-center p-4 sm:p-10">
       <div className="text-center">
         <h2 className="text-base text-teal-600 font-semibold tracking-wide">
-          FEATURED Webinars
+          FEATURED WEBINARS
         </h2>
         <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-white sm:text-4xl">
           Enhance Your Musical Journey
         </p>
       </div>
-      <div className=" mx-auto">
+      <div className="mx-auto">
         <HoverEffect items={upcomingWebinars} />
       </div>
+      <Link
+        href={"/"}
+        className="bg-zinc-900 text-white px-6 py-2 rounded-lg mt-6 font-semibold dark:bg-white dark:text-black"
+      >
+        Explore Webinars
+      </Link>
     </div>
   );
 };
