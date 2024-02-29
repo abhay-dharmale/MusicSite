@@ -1,5 +1,6 @@
 import Cards from "@/components/Cards";
 import FeaturedSection from "@/components/FeaturedSection";
+import Footer from "@/components/Footer";
 import Instructors from "@/components/Instructors";
 import Testimonial from "@/components/Testimonial";
 import WhyChooseUs from "@/components/WhyChooseUs";
@@ -15,6 +16,7 @@ export default function Home() {
       <Testimonial />
       <Cards />
       <Instructors />
+      <Footer />
     </main>
     </>
   );
