@@ -15,7 +15,7 @@ function MusicSchoolContactUs() {
   };
 
   return (
-    <div className="h-screen bg-gray-100 dark:bg-gray-900 py-12 pt-36 relative">
+    <div className="min-h-screen bg-gray-100 dark:bg-gray-900 py-12 pt-36 relative">
       <BackgroundBeams className="absolute top-0 left-0 w-full h-full z-0" />
       <div className="max-w-2xl mx-auto p-4 relative z-10">
         <h1 className="text-2xl md:text-7xl text-center font-sans font-bold mb-8 text-white">
@@ -40,7 +40,7 @@ function MusicSchoolContactUs() {
             onChange={(e) => setMessage(e.target.value)}
             placeholder="Your message"
             className="rounded-lg border border-neutral-800 outline-none  focus:ring-1 focus:ring-teal-500 w-full p-4 bg-neutral-950 placeholder:text-neutral-700"
-            rows={5}
+            rows={3}
             required
           ></textarea>
           <button

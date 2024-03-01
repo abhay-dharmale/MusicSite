@@ -1,0 +1,65 @@
+{
+    "webinars": [
+      {
+        "id": 1,
+        "title": "Music Theory Essentials",
+        "slug": "music-theory-essentials",
+        "description": "Join us for a comprehensive webinar covering the essential principles of music theory. From notation to scales and harmony, this session will provide a solid foundation for your musical journey.",
+        "date": "March 10, 2024",
+        "time": "10:00 AM - 12:00 PM",
+        "instructor": "Alex Wilson",
+        "image": "/webinars/music-theory.jpeg"
+      },
+      {
+        "id": 2,
+        "title": "Introduction to Jazz History",
+        "slug": "introduction-to-jazz-history",
+        "description": "Explore the fascinating history of jazz music in this introductory webinar. From its roots in African American culture to its evolution into a global phenomenon, discover the rich tapestry of jazz history.",
+        "date": "March 17, 2024",
+        "time": "2:00 PM - 4:00 PM",
+        "instructor": "Chris Davis",
+        "image": "/webinars/jazz-history.jpeg"
+      },
+      {
+        "id": 3,
+        "title": "Exploring Music Production Software",
+        "slug": "exploring-music-production-software",
+        "description": "Get an overview of popular music production software and learn how to use them to create your own music. Whether you're a beginner or an experienced producer, this webinar will help you navigate the world of music production tools.",
+        "date": "March 24, 2024",
+        "time": "6:00 PM - 8:00 PM",
+        "instructor": "Luke Harris",
+        "image": "/webinars/music-production.jpeg"
+      },
+      {
+        "id": 4,
+        "title": "Introduction to Songwriting",
+        "slug": "introduction-to-songwriting",
+        "description": "Discover the fundamentals of songwriting in this introductory webinar. Learn how to structure songs, craft lyrics, and create memorable melodies that resonate with your audience.",
+        "date": "March 31, 2024",
+        "time": "4:00 PM - 6:00 PM",
+        "instructor": "Samantha Miller",
+        "image": "/webinars/songwriting.jpeg"
+      },
+      {
+        "id": 5,
+        "title": "Mastering Guitar Techniques",
+        "slug": "mastering-guitar-techniques",
+        "description": "Take your guitar playing to the next level with this advanced techniques webinar. Explore techniques such as fingerstyle, bending, and tapping to enhance your playing and express your musicality.",
+        "date": "April 7, 2024",
+        "time": "7:00 PM - 9:00 PM",
+        "instructor": "John Doe",
+        "image": "/webinars/guitar-techniques.jpeg"
+      },
+      {
+        "id": 6,
+        "title": "Vocal Warm-up Exercises",
+        "slug": "vocal-warm-up-exercises",
+        "description": "Join us for a practical webinar focused on vocal warm-up exercises. Learn how to properly warm up your voice to prevent strain and improve vocal performance in any musical style.",
+        "date": "April 14, 2024",
+        "time": "3:00 PM - 5:00 PM",
+        "instructor": "Emily Johnson",
+        "image": "/webinars/vocal-warmup.jpeg"
+      }
+    ]
+  }
+  

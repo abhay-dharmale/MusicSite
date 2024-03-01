@@ -49,7 +49,7 @@ const FeaturedSection = () => {
                     {course.description}
                   </p>
                   <Link
-                    href={`/courses/${course.slug}`}
+                    href={`/courses`}
                     className="bg-zinc-900 text-white px-6 py-2 rounded-lg mt-6 font-semibold dark:bg-white dark:text-black"
                   >
                     Learn more
