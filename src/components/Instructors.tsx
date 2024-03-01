@@ -51,7 +51,7 @@ const people = [
 const Instructors = () => {
   return (
     <div className="relative overflow-hidden flex items-center justify-center">
-      <WavyBackground className="w-full h-screen max-w-7xl mx-auto flex flex-col items-center justify-center">
+      <WavyBackground className="w-full h-screen max-w-7xl mx-auto flex flex-col items-center justify-center p-2">
         <h2 className="text-3xl md:text-4xl lg:text-7xl text-white font-bold text-center mb-8 uppercase">Meet Our Instructors</h2>
         <p className="text-base md:text-lg text-white text-center mb-4">
           Discover the talented professionals who will guide your musical

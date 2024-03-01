@@ -1,48 +1,64 @@
-"use client";
-import { Meteors } from "@/components/ui/meteors";
-import { MdSend } from "react-icons/md";
+'use client';
 
-const page = () => {
+import React, { FormEvent, useState } from 'react';
+import { BackgroundBeams } from '@/components/ui/background-beams';
+
+function MusicSchoolContactUs() {
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+
+  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    console.log('Submitted:', { email, message });
+    setEmail('');
+    setMessage('');
+  };
+
   return (
-    <div className="h-screen w-screen">
-      <div className="h-full w-full flex-col sm:flex-row flex items-center justify-center">
-        <div className="h-full md:h-[80%] w-full md:w-1/2 flex flex-col pl-0 md:pl-[12%] items-center md:items-start justify-center">
-          <h1 className="text-5xl md:text-7xl text-center md:text-left md:-mt-[60px] lg:-mt-[100px]">LET&apos;S TALK</h1>
-          <p className="text-xs py-3 sm:py-0 sm:p-3 md:py-4 md:px-0 lg:px-2">Ask us anything or just say hi..</p>
-        </div>
-        <div className="relative h-full md:h-[80%] w-full md:w-1/2 flex flex-col justify-center p-[4vw]">
-          <div className="flex gap-4">
-            <p className="absolute top-[16%] left-6 sm:top-[26%] sm:left-[12%] lg:top-[22%] lg:left-[10%] text-zinc-300 text-sm font-semibold">NAME</p>
-            <input
-              type="text"
-              placeholder="enter your name"
-              className="relative px-2 py-2 w-full bg-transparent border-b outline-none border-b-zinc-300 mx-3 text-xs md:text-sm"
-            />
-
-            <p className="absolute top-[16%] left-[56%] sm:top-[26%] sm:left-[55%] lg:top-[22%] lg:left-[53%] text-zinc-300 text-sm font-semibold">EMAIL</p>
-            <input
-              type="email"
-              placeholder="enter your email"
-              className="relative px-2 py-2 w-full bg-transparent border-b outline-none border-b-zinc-300 mx-3 text-xs md:text-sm"
-            />
-          </div>
-          <div className="w-full px-[1vw] mt-[4vw] flex items-center justify-center sm:items-start sm:px-0">
-          <p className="absolute top-[40%] left-6 sm:top-[46%] sm:left-[11%] lg:top-[44.5%] lg:left-[10%] text-zinc-300 text-sm font-semibold">LEAVE A MESSAGE</p>
-            <input
-              type="textarea"
-              placeholder="your message"
-              className="relative px-2 py-2 w-full bg-transparent border-b outline-none border-b-zinc-300 mx-3 my-10 text-xs md:text-sm"
-            />
-          </div>
-          <div className="btn bg-white text-black text-sm flex items-center justify-center w-[50%] mx-auto lg:mx-4 md:w-[60%] lg:w-[20%] lg:mt-10 gap-4 py-2 rounded-md">
-            <button className="font-semibold">Send</button>
-            <MdSend />
-          </div>
-        </div>
+    <div className="min-h-screen bg-gray-100 dark:bg-gray-900 py-12 pt-36 relative">
+      {' '}
+      {/* Ensure the container is relative */}
+      {/* BackgroundBeams with adjusted z-index */}
+      <BackgroundBeams className="absolute top-0 left-0 w-full h-full z-0" />
+      {/* Content with higher z-index */}
+      <div className="max-w-2xl mx-auto p-4 relative z-10">
+        {' '}
+        {/* Add relative and z-10 to bring content to the front */}
+        <h1 className="text-lg md:text-7xl text-center font-sans font-bold mb-8 text-white">
+          Contact Us
+        </h1>
+        <p className="text-neutral-500 max-w-lg mx-auto my-2 text-sm text-center">
+          We&apos;re here to help with any questions about our courses,
+          programs, or events. Reach out and let us know how we can assist you
+          in your musical journey.
+        </p>
+        <form onSubmit={handleSubmit} className="space-y-4 mt-4">
+          <input
+            type="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            placeholder="Your email address"
+            className="rounded-lg border border-neutral-800 focus:ring-2 focus:ring-teal-500 w-full p-4 bg-neutral-950 placeholder:text-neutral-700"
+            required
+          />
+          <textarea
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+            placeholder="Your message"
+            className="rounded-lg border border-neutral-800 focus:ring-2 focus:ring-teal-500 w-full p-4 bg-neutral-950 placeholder:text-neutral-700"
+            rows={5}
+            required
+          ></textarea>
+          <button
+            type="submit"
+            className="px-6 py-2 rounded-lg bg-teal-500 text-white font-medium hover:bg-teal-600 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2"
+          >
+            Send Message
+          </button>
+        </form>
       </div>
-      {/* <Meteors number={200} /> */}
     </div>
   );
-};
+}
 
-export default page;
+export default MusicSchoolContactUs;
