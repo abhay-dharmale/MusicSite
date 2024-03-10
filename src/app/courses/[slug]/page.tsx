@@ -26,7 +26,7 @@ const CoursePage = () => {
   }
 
   return (
-    <div className="min-h-screen bg-black py-12 px-6 md:px-0 pt-36">
+    <div className="min-h-fit bg-black py-12 px-6 md:px-0 pt-36">
       <CardContainer key={course.id} className="inter-var m-2">
         <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
           <CardItem
@@ -57,14 +57,14 @@ const CoursePage = () => {
               as="button"
               className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
             >
-              Try now →
+              Price: ${course.price}
             </CardItem>
             <CardItem
               translateZ={20}
               as="button"
               className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
             >
-              <Link href={`/courses/${course.slug}`}>Sign up</Link>
+              <Link href={`/courses/${course.slug}`}>Enroll Now</Link>
             </CardItem>
           </div>
         </CardBody>
